@@ -27,5 +27,8 @@ setup(name=name,
       keywords=['irc', 'codecs'],
       install_requires=[],
       tests_require=[],
-      packages=find_packages(exclude=['tests'])
-)
+      packages=find_packages(exclude=['tests']),
+      entry_points="""\
+      [console_scripts]
+      ircconv = ircconv:main
+      """)
